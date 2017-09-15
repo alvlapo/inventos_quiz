@@ -22,7 +22,7 @@ loop do
 
   seq = ExtRange.new(a.to_i, b.to_i)
 
-  if seq.empty? 
+  if seq.empty? or seq.size == 1
     puts 'Неверный ввод. Число А должно быть меньше числа B.'
     next
   end
